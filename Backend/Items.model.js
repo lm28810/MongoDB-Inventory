@@ -8,7 +8,7 @@ const ItemsSchema = new Schema({
         inventory: Number,
         nextDelivery: Date,
         deliveryAmt: Number,
-         price: Number,
+        price: Number,
 }
 })
 const Items = mongoose.model('items', ItemsSchema)

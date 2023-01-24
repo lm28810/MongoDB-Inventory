@@ -3,7 +3,7 @@ const cors = require('cors')
 const mongoose = require('mongoose')
 require('dotenv').config();
 const Items = require('./Backend/Items.model')
-const productRouter = require('./Backend/Routes/Items')
+const productRouter = require('./Backend/Routes/Item')
 
 const app = express()
 const port = process.env.PORT || 4000;
@@ -29,7 +29,7 @@ mongoose.connection.once('open', ()=> {
 
 // Route to Create Items.create()
 
- app.use('/items', (removeEventListener,res)=> productRouter)
+ app.use('/Items', productRouter)
 
 
 
