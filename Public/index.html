@@ -1,0 +1,99 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+           
+           
+        }
+        h1,p{
+            text-align: center;
+        }
+
+        p{
+            font-size: 1rem;
+        }
+        .form1{
+            display: flex;
+            margin: auto;
+            padding: 2em;
+            width: 50vw;
+        }
+        input{
+            margin: 1em;
+        }
+        input[type=text],
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+    
+        input[type=submit] {
+            width: 100%;
+            background-color: black;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    
+        input[type=submit]:hover {
+            background-color: orangered;
+        }
+    
+        div {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Sale Your Things</h3>
+    <p>Enter the details for the item you would like to sale below:</p>
+    <div class="container">
+    <div class="form1">
+        <form action="/action_page.php">
+            <label for="Pname">Product Name</label>
+            <input type="text" id="Pname" name="Productname" placeholder="Product Name.." required>
+    
+            <label for="Stock">In Stock</label>
+            <input type="number" id="Stock" name="Stock" placeholder="How many for Sale..?">
+            <label for="DeliveryDate">DeliveryDate</label>
+            <input type="date" id="DeliveryDate" name="DeliveryDate" required>
+            <label for="dPrice">Deliver Price</label>
+            <input type="number" placeholder="1.0" step="0.01" min="0"required />
+            <label for="sPrice">Sale Price</label>
+            <input type="number" placeholder="1.0" step="0.01" min="0"required />
+    
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+            </select>
+    
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    </div>
+
+    <!-- //price: 2.00,x
+    inventory: 700,x
+    nextDelivery: Date,x
+    deliveryAmt: 200,x
+    name: "Toy Car"x -->
+</body>
+</html>

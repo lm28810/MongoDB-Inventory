@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.8.4"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "mongodb-inventory",
+  "description": "",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lm28810/MongoDB-Inventory.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lm28810/MongoDB-Inventory/issues"
+  },
+  "homepage": "https://github.com/lm28810/MongoDB-Inventory#readme"
+}
