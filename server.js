@@ -4,6 +4,7 @@ const mongoose = require('mongoose')
 require('dotenv').config();
 const Items = require('./Backend/Items.model')
 const productRouter = require('./Backend/Routes/Item')
+const veggieRouter = require('./Backend/Routes/Veggie')
 
 const app = express()
 const port = process.env.PORT || 4000;
@@ -30,6 +31,7 @@ mongoose.connection.once('open', ()=> {
 // Route to Create Items.create()
 
   app.use('/Items', productRouter)
+  app.use('/Veggie', veggieRouter)
 
 
 
